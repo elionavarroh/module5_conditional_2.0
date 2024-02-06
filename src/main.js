@@ -76,7 +76,7 @@ function mePlanto() {
       alert("¡Nada mal! Te has quedado cerca");
       break;
     case 5:
-      alert("5")
+      alert("¿Solo un 5?")
     default:
       alert("F, has sido muy conservador");
   }
