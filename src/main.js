@@ -53,7 +53,7 @@ function pideCarta() {
 
   // Si la puntuación supera 7.5, el juego termina.
   if (puntuacion > 7.5) {
-    alert("Game over");
+    alert("Game over ¡Prueba otra vez!");
     document.getElementById('pideCarta').disabled = true;
     document.getElementById('mePlanto').disabled = true;
   }
