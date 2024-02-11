@@ -64,7 +64,7 @@ const dameValorCarta = (numeroAleatorio) => {
 //Usamos un const para la puntuación de la carta.
 const damePuntoDeLaCarta = (carta) => {
   if (carta > 7) {
-    return 0,5;
+    return 0.5;
   } else {
     carta;
   };
@@ -95,8 +95,8 @@ function pideCarta() {
   const numeroAleatorio = dameNumeroAleatorio();
   const carta = dameValorCarta(numeroAleatorio);
   const puntoCarta = damePuntoDeLaCarta(carta);
-  const puntosSumados = sumarPuntos(puntosParaSumar);
-  setPuntuacion(nuevoPunto);
+  const puntosSumados = sumarPuntos(puntoCarta);
+  setPuntuacion(puntosSumados);
   const urlCarta = dameUrlCarta(carta);
   mostrarCarta(urlCarta);
   muestraPuntuacion();
