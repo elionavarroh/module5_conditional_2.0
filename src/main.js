@@ -109,6 +109,7 @@ function pideCarta() {
 //Usamos un const para mostrar un mensaje en el caso de que la condición de ganar partida se haya cumplido.
 const ganarPartida = () => {
   mostrarMensaje("¡Enhorabuena, has ganado!");
+  document.getElementById("queHabriaPasado").disabled = true;
 };
 
 //Usamos un const para mostrar un mensaje en el caso de que la condición de perder la partida se haya cumplido.
