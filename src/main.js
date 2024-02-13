@@ -120,6 +120,7 @@ const perderPartida = () => {
 
 //Usamos una función para plantarnos y deshabilitamos los botones de pedir carta y plantarse.
 function mePlanto() {
+  mostrarMensaje("¡Más suerte a la próxima!");
   document.getElementById("pideCarta").disabled = true;
   document.getElementById("mePlanto").disabled = true;
   document.getElementById("queHabriaPasado").disabled = false;
@@ -129,12 +130,12 @@ function mePlanto() {
 function nuevaPartida() {
   puntuacion = 0;
   muestraPuntuacion();
-  gestionarPartida;
   document.getElementById("carta").src =
     "https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg";
   document.getElementById("pideCarta").disabled = false;
   document.getElementById("mePlanto").disabled = false;
   document.getElementById("queHabriaPasado").disabled = true;
+  mostrarMensaje("");
 };
 
 //Eventos de los botones.
@@ -214,9 +215,10 @@ function pideCartaNuevo() {
   const puntoCarta = damePuntoDeLaCartaNuevo(cartaNuevo);
   const puntosSumados = sumarPuntosNuevo(puntoCarta);
   setPuntuacion(puntosSumados);
-  const urlCarta = dameUrlCarta(carta);
+  const urlCarta = dameUrlCarta(cartaNuevo);
   mostrarCartaNuevo(urlCarta);
   muestraPuntuacionNuevo();
+  mostrarMensaje("");
 };
 
 //Eventos del botón nuevo
